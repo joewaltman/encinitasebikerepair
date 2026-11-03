@@ -169,7 +169,7 @@ input:focus, select:focus, textarea:focus { border-color: var(--ink); outline: n
 @media (max-width: 860px) { .foot-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 480px) { .foot-grid { grid-template-columns: 1fr; } }
 .foot-grid > div { display: grid; gap: 8px; align-content: start; min-width: 0; }
-.foot-grid h4 { margin: 0 0 4px; font: 500 0.74rem var(--mono); letter-spacing: 0.09em; text-transform: uppercase; color: var(--band-ink); }
+.foot-grid h3 { margin: 0 0 4px; font: 500 0.74rem var(--mono); letter-spacing: 0.09em; text-transform: uppercase; color: var(--band-ink); }
 .foot-grid ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
 .foot-grid a { text-decoration: none; }
 .foot-grid a:hover { color: var(--band-ink); text-decoration: underline; }
