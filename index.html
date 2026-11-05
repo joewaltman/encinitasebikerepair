@@ -28,7 +28,7 @@
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=Figtree:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=Figtree:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" media="print" onload="this.media='all'">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=Figtree:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap"></noscript>
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css?v=20261105">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -438,7 +438,7 @@
         <p class="form-msg" id="form-msg" role="status" hidden></p>
         <div><button class="btn" type="submit" id="submit">Send request</button></div>
         <div class="fallback" id="fallback" hidden>
-          <p class="form-msg">Online booking isn't connected yet. Copy this and text it to <span class="num">(760) 415-2208</span>.</p>
+          <p class="form-msg err">We couldn't send your request. Copy this and text it to <span class="num">(760) 415-2208</span> instead.</p>
           <pre id="fallback-text"></pre>
           <div><button class="btn ghost small" type="button" id="copy">Copy text</button> <span class="form-msg ok" id="copied" hidden>Copied</span></div>
         </div>
@@ -488,6 +488,6 @@
   </div>
 </footer>
 
-<script src="script.js"></script>
+<script src="script.js?v=20261105"></script>
 </body>
 </html>

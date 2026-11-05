@@ -8,3 +8,7 @@ Plain HTML/CSS/JS. No build step. Upload the folder to any static host (Netlify,
 2. **Booking form.** Connected to Formspree (`FORM_ENDPOINT` in `script.js`). Requests are emailed to the address on that Formspree account. If Formspree is ever unreachable, the form falls back to a copy-and-text message.
 3. **Policies.** Check that the hours, payment methods, 30-day labor warranty, 2-hour cancellation window and record-keeping times in `terms.html` and `privacy.html` match how you actually run things. If you add analytics or a different payment or form service, update the "Who we share it with" and "Cookies" sections.
 4. **Domain.** Add `<link rel="canonical">` and a `"url"` to the JSON-LD block in `index.html` once you have a domain.
+
+## Updating styles or scripts
+
+Cloudflare caches `styles.css` and `script.js` for 4 hours. After changing either file, bump the `?v=` number on the `styles.css` and `script.js` links in all three HTML files so visitors get the new version right away.
