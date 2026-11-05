@@ -9,6 +9,12 @@ var BUSINESS_PHONE = "(760) 415-2208";
   var y = document.getElementById("year");
   if (y) y.textContent = new Date().getFullYear();
 
+  // Time-limited promos remove themselves once their data-ends date passes.
+  var now = Date.now();
+  document.querySelectorAll("[data-ends]").forEach(function (el) {
+    if (now >= Date.parse(el.getAttribute("data-ends"))) el.remove();
+  });
+
   var form = document.getElementById("booking");
   if (!form) return;
   var msg = document.getElementById("form-msg");

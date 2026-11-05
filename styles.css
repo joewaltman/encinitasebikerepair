@@ -51,6 +51,14 @@ p { margin: 0; }
 .eyebrow { font-family: var(--mono); font-size: 0.74rem; font-weight: 500; letter-spacing: 0.09em; text-transform: uppercase; color: var(--muted); }
 .num { font-family: var(--mono); font-variant-numeric: tabular-nums; font-weight: 500; }
 
+/* Promo strip (above the header; removed by script.js after its end date) */
+.promo { background: var(--charge); color: var(--charge-ink); font-size: 0.93rem; }
+.promo .wrap { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 4px 16px; min-height: 44px; padding-block: 8px; text-align: center; }
+.promo a { font-weight: 600; white-space: nowrap; }
+.promo-note { border-top: 3px solid var(--charge); }
+.promo-short { display: none; }
+@media (max-width: 560px) { .promo-more { display: none; } .promo-short { display: inline; } .promo .wrap { gap: 2px 12px; min-height: 40px; padding-block: 6px; } }
+
 /* Header */
 body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 30; background: var(--band); }
 .site-header { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: var(--band); color: var(--band-ink); border-bottom: 1px solid color-mix(in srgb, var(--band-ink) 12%, transparent); }
